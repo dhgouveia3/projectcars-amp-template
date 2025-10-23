@@ -1,0 +1,20 @@
+[
+    {
+        "UpdateStageName": "SteamCMD Download",
+        "UpdateSourcePlatform": "All", 
+        "UpdateSource": "SteamCMD", 
+        "UpdateSourceData": "332670",
+        "UpdateSourceArgs": "234630",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Config Template Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "OverwriteExistingFiles": true,
+        "UpdateSourceData": "https://raw.githubusercontent.com/dhgouveia2/amptemplates/main/project-carsserver.cfg",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UpdateSourceArgs": "AMP_serverPJC1.cfg",
+        "SkipOnFailure": false
+    }
+]
